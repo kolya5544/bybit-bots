@@ -12,11 +12,14 @@ Bybit, please hire me 😥
 
 There are different categories of bots presented in this repository.
 
-| Directory | Description |
-| --- | --- |
-| [`simplest_examples`](https://github.com/kolya5544/bybit-bots/tree/master/simplest_examples) | Contains the simplest examples of getting authenticated, make simple requests, request information from the market and so on |
+| Directory | Description | Complexity level |
+| --- | --- | --- |
+| [`simplest_examples`](https://github.com/kolya5544/bybit-bots/tree/master/simplest_examples) | Contains very simple examples of getting authenticated, make simple requests, request information from the market and so on | ✅✅✅✅🔥 - Very simple |
+| [`ws_examples`](https://github.com/kolya5544/bybit-bots/tree/master/ws_examples) | Simple examples on WebSocket: authentication, simple trading, etc. | ✅✅✅🔥🔥 - Simple |
 
 Each category will have examples in some of available languages. You can check out the libraries below.
+
+Complexity level refers to the difficulty for beginners to grasp the concepts and understand the code behind each interaction, as well as how complex code is in terms of algorithms used. It's a subjective metric.
 
 ## Technologies
 

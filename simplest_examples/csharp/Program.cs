@@ -7,9 +7,9 @@ namespace SimpleExample
 {
     internal class Program
     {
-        public static string API_KEY = "MtE4aoOugtgMx8q4cs";
-        public static string API_SECRET = "UOu1Qt17nVwuCrjkihOmkLCkcws2LUwSpuzk";
-        public static BybitEnvironment env = BybitEnvironment.DemoTrading; // Demo Account on Mainnet
+        public static readonly string API_KEY = "MtE4aoOugtgMx8q4cs";
+        public static readonly string API_SECRET = "UOu1Qt17nVwuCrjkihOmkLCkcws2LUwSpuzk";
+        public static readonly BybitEnvironment env = BybitEnvironment.DemoTrading; // Demo Account on Mainnet
 
 
         static async Task Main(string[] args)
