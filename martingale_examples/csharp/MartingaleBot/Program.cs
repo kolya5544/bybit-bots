@@ -17,13 +17,13 @@ namespace MartingaleBot
 
         // Martingale options setup
         public static Category botCategory = Category.Linear;
-        public static string symbol = "APEUSDT";
+        public static string symbol = "TONUSDT";
         public static decimal investmentAmountMax = 10000m; // in USDT
         public static OrderSide side = OrderSide.Buy;
         public static decimal initialOrderSize = 500m; // in USDT
         // strategy parameters
-        public static decimal priceMovement = 0.005m; // add position order after 2% of price movement
-        public static decimal posMultiplier = 1.5m; // each additional order is 1.2x times the previous order
+        public static decimal priceMovement = 0.02m; // add position order after 2% of price movement
+        public static decimal posMultiplier = 1.2m; // each additional order is 1.2x times the previous order
         public static int leverage = 10; // 10x
         public static int maxAddition = 5; // no more than 5 additional orders
         public static decimal takeProfit = 0.02m; // take profit after 2% of price movement
