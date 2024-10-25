@@ -18,7 +18,6 @@ namespace MartingaleBot
         // Martingale options setup
         public static Category botCategory = Category.Linear;
         public static string symbol = "TONUSDT";
-        public static decimal investmentAmountMax = 10000m; // in USDT
         public static OrderSide side = OrderSide.Buy;
         public static decimal initialOrderSize = 500m; // in USDT
         // strategy parameters
@@ -28,6 +27,10 @@ namespace MartingaleBot
         public static int maxAddition = 5; // no more than 5 additional orders
         public static decimal takeProfit = 0.02m; // take profit after 2% of price movement
         public static bool enableLoop = true; // should the bot continue running after takeProfit?
+        // price range to operate
+        public static decimal minPriceRange = 4.5m;
+        public static decimal maxPriceRange = 8m;
+
 
         // vars
         public static BybitRestClient restClient;
@@ -100,6 +103,11 @@ namespace MartingaleBot
 
             while (true)
             {
+                if (currentPrice < minPriceRange || currentPrice > maxPriceRange)
+                {
+                    Console.WriteLine($"Bot terminated! Fell out of price range specified: {currentPrice} is not in [{minPriceRange}; {maxPriceRange}]");
+                    return;
+                }
                 positionOpenRequest = true;
                 if (!positionOpened)
                 {
