@@ -7,6 +7,8 @@ TON - `kushnarenko.ton` / UQByJu13PhBBRkgtdv3nPlzRwKOQ5y1YeQok3JGI-A_Kolya
 
 Ethereum, MNT and other tokens - `kolya5544.eth` / 0x27c5De49e72257c426D92b22f830Ed0b2BF2dcc0
 
+Bybit ID for direct transfers of any coin: `118027304`
+
 Bybit, please hire me 😥
 
 ## Breakdown
