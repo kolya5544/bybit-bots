@@ -1,8 +1,8 @@
 import sys
 from pybit.unified_trading import HTTP
 
-API_KEY = "MtE4aoOugtgMx8q4cs"
-API_SECRET = "UOu1Qt17nVwuCrjkihOmkLCkcws2LUwSpuzk"
+API_KEY = "your api key here"
+API_SECRET = "your api secret here"
 demo = True # Demo Account on Mainnet
 
 # Initialize client to interact with Bybit REST API

@@ -9,8 +9,8 @@ namespace WSExample
 {
     internal class Program
     {
-        public static readonly string API_KEY = "4BAE52aOpxhqWGTbXl";
-        public static readonly string API_SECRET = "l6xAmFWmqE411Kpp5yigY9WapBXRYeiwQHOr";
+        public static readonly string API_KEY = "your api key here";
+        public static readonly string API_SECRET = "your api secret here";
         public static readonly BybitEnvironment env = BybitEnvironment.Testnet; // Testnet account. KEEP IN MIND!! Demo doesn't support WebSocket trading.
 
         public static decimal BtcPrice = 0m;

@@ -13,8 +13,8 @@ namespace GridBot
 {
     internal class Program
     {
-        public static readonly string API_KEY = "g3tUdWih4rI0d2MTt0";
-        public static readonly string API_SECRET = "rOUmxpSJ6idhpck2SO7RW6Pf8p5vKcLDRqWC";
+        public static readonly string API_KEY = "your api key here";
+        public static readonly string API_SECRET = "your api secret here";
         public static readonly BybitEnvironment env = BybitEnvironment.DemoTrading; // Demo Account on Mainnet
 
         // Grid options setup
