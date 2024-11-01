@@ -44,6 +44,7 @@ namespace WSExample
 
             // example creating an order through WebSocket.
             // WebSocker order placement is much faster than REST API due to less overhead
+            // https://bybit-exchange.github.io/docs/v5/websocket/trade/guideline
             Console.WriteLine($"[MAIN] Creating a LONG limit order for BTCUSDT...");
             var order = await wsClient.V5PrivateApi.PlaceOrderAsync(
                 category: Category.Linear,

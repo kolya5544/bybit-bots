@@ -35,14 +35,6 @@ trade = WebSocketTrading(
     testnet=testnet  
     )
 
-#trade = WebSocket(
-#    api_key=API_KEY,
-#    api_secret=API_SECRET,
-#    demo=demo,
-#    testnet=testnet,
-#    channel_type="trade"
-#    )
-
 def priceUpdateHandler(ev):
     global BtcPrice
     ltp = ev["data"]["lastPrice"]
@@ -79,6 +71,7 @@ while BtcPrice == 0:
 
 # Example creating an order through WebSocket.
 # WebSocker order placement is much faster than REST API due to less overhead
+# https://bybit-exchange.github.io/docs/v5/websocket/trade/guideline
 print("[MAIN] Creating a LONG limit order for BTCUSDT...")
 order = trade.place_order(
     category="linear",
