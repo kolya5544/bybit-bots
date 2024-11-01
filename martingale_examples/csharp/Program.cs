@@ -93,7 +93,7 @@ namespace MartingaleBot
                 symbol: symbol
                 );
             var posOfInt = positions.Data.List.FirstOrDefault((z) => (z.Side == PositionSide.Buy && side == OrderSide.Buy) ||
-                                                                     (z.Side == PositionSide.Sell && side == OrderSide.Sell));
+                                                                     (z.Side == PositionSide.Sell && side == OrderSide.Sell) && z.Quantity != 0m);
 
             positionOpened = posOfInt is not null;
             Console.WriteLine($"Position opened: {(positionOpened ? "YES" : "NO")}");
