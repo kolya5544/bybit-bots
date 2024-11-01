@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndicatorBot", "IndicatorBot.csproj", "{ABFE6018-598F-4B6D-9CE8-A1D50EE02235}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABFE6018-598F-4B6D-9CE8-A1D50EE02235}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABFE6018-598F-4B6D-9CE8-A1D50EE02235}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABFE6018-598F-4B6D-9CE8-A1D50EE02235}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABFE6018-598F-4B6D-9CE8-A1D50EE02235}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A335621-0904-47EF-9A42-CA33DB0965D3}
+	EndGlobalSection
+EndGlobal
