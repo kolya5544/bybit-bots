@@ -17,11 +17,15 @@ There are different categories of bots presented in this repository.
 
 | Directory | Description | Complexity level |
 | --- | --- | --- |
-| [`simplest_examples`](https://github.com/kolya5544/bybit-bots/tree/master/simplest_examples) | Contains very simple examples of getting authenticated, make simple requests, request information from the market and so on | 🔥 - Very simple |
+| [`simplest_examples`](https://github.com/kolya5544/bybit-bots/tree/master/simplest_examples) | Simple examples on how to get authenticated, make simple requests, request information from the market, place orders and so on | 🔥 - Very simple |
 | [`ws_examples`](https://github.com/kolya5544/bybit-bots/tree/master/ws_examples) | Simple examples on WebSocket: authentication, simple trading, etc. | 🔥🔥 - Simple |
 | [`martingale_examples`](https://github.com/kolya5544/bybit-bots/tree/master/martingale_examples) | Examples of linear short & long futures Martingale bots | 🔥🔥🔥 - Intermediate |
-| [`grid_examples`](https://github.com/kolya5544/bybit-bots/tree/master/grid_examples) | Examples of short & long futures Grid bots | 🔥🔥🔥 - Intermediate |
-| [`indicator_examples`](https://github.com/kolya5544/bybit-bots/tree/master/indicator_examples) | Examples of bots that report information on different indicators | 🔥🔥🔥 - Intermediate |
+| [`grid_examples`](https://github.com/kolya5544/bybit-bots/tree/master/grid_examples) | Examples of linear short & long futures Grid bots | 🔥🔥🔥 - Intermediate |
+| [`indicator_examples`](https://github.com/kolya5544/bybit-bots/tree/master/indicator_examples) | Examples of bots that report information on different indicators, and trade accordingly | 🔥🔥🔥🔥 - Advanced |
+| [`liquidity_provider_examples`](https://github.com/kolya5544/bybit-bots/tree/master/liquidity_provider_examples) | [TODO] Simple High-Frequency Liquidity Provider bot for perpetual pairs. **You will likely need at least MM 1 level to turn this into a profitable strategy.** | 🔥🔥🔥🔥🔥 - Professional |
+| [`amm_examples`](https://github.com/kolya5544/bybit-bots/tree/master/amm_examples) | [TODO] Examples of Automated Market Maker bots, CFMMs/CPMMs | 🔥🔥🔥🔥🔥 - Professional |
+| [`price_arbitrage_examples`](https://github.com/kolya5544/bybit-bots/tree/master/price_arbitrage_examples) | [TODO] Examples of bots that arbitrage difference between spot and futures on a single exchange | 🔥🔥🔥🔥🔥 - Professional |
+| [`funding_arbitrage_examples`](https://github.com/kolya5544/bybit-bots/tree/master/funding_arbitrage_examples) | [TODO] Examples of bots that arbitrage funding rate by utilizing spot and futures | 🔥🔥🔥🔥🔥 - Professional |
 
 Each category will have examples in some of available languages. You can check out the libraries below.
 
