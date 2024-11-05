@@ -49,17 +49,21 @@ Here is the list of articles you'll likely find useful if you're working on Trad
 | Introduction to Martingale bots | [Introduction to Futures Martingale Bot @ Bybit Help Center](https://www.bybit.com/en/help-center/article/Introduction-to-Futures-Martingale-Bot) |
 | Introduction to Grid bots | [Introduction to Futures Grid Bot on Bybit @ Bybit Help Center](https://www.bybit.com/en/help-center/article/Introduction-to-Futures-Grid-Bot-on-Bybit) |
 
-## Contributions
+## Professional work - [SELF-ADVERTISEMENT]
 
-I do not accept any big contributions or major code changes. Feel free to use GitHub Issues to report bugs and request features to be implemented.
-
-## Contact Me
+Need a professional to build a trading bot for you? Wide portfolio of different trading bots and TradingView strategies implemented into C# and Python applications. Cheap hosting for your bots, backtesting of your strategies. Professional help with code/consulting. You can always find me here:
 
 TG: @kolya5544
 
 Discord: @kolya5544
 
 WEB: https://nk.ax/
+
+Rate is discussable
+
+## Contributions
+
+I do not accept any big contributions or major code changes. Feel free to use GitHub Issues to report bugs and request features to be implemented.
 
 ## License
 
