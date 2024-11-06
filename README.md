@@ -18,7 +18,8 @@ There are different categories of bots presented in this repository.
 | Directory | Description | Complexity level |
 | --- | --- | --- |
 | [`simplest_examples`](https://github.com/kolya5544/bybit-bots/tree/master/simplest_examples) | Simple examples on how to get authenticated, make simple requests, request information from the market, place orders and so on | 🔥 - Very simple |
-| [`ws_examples`](https://github.com/kolya5544/bybit-bots/tree/master/ws_examples) | Simple examples on WebSocket: authentication, simple trading, etc. | 🔥🔥 - Simple |
+| [`ws_examples`](https://github.com/kolya5544/bybit-bots/tree/master/ws_examples) | Simple examples on WebSocket: authentication, simple trading, etc. | 🔥 - Very simple |
+| [`dca_examples`](https://github.com/kolya5544/bybit-bots/tree/master/dca_examples) | Examples of DCA (Dollar Cost Averaging) bots | 🔥🔥 - Simple |
 | [`martingale_examples`](https://github.com/kolya5544/bybit-bots/tree/master/martingale_examples) | Examples of linear short & long futures Martingale bots | 🔥🔥🔥 - Intermediate |
 | [`grid_examples`](https://github.com/kolya5544/bybit-bots/tree/master/grid_examples) | Examples of linear short & long futures Grid bots | 🔥🔥🔥 - Intermediate |
 | [`indicator_examples`](https://github.com/kolya5544/bybit-bots/tree/master/indicator_examples) | Examples of bots that report information on different indicators, and trade accordingly | 🔥🔥🔥🔥 - Advanced |
@@ -33,12 +34,13 @@ Complexity level refers to the difficulty for beginners to grasp the concepts an
 
 ## Technologies
 
-I don't plan on including any raw REST API bots, so for every language there'll be a specific library used to make things easier for everyone.
+I don't plan on including any raw REST API bots, so for every language there'll be a specific library/SDK used to make things easier for everyone.
 
 | Language | Library | Installation | Environment |
 | --- | --- | --- | --- |
-| C# | [Bybit.Net by JKorf](https://github.com/JKorf/Bybit.Net) | dotnet add package Bybit.Net | .NET 8 |
-| Python | [pybit by Dexter Dickinson](https://github.com/bybit-exchange/pybit) | pip install pybit | Python 3.10 |
+| C# | [Bybit.Net by JKorf](https://github.com/JKorf/Bybit.Net) | `dotnet add package Bybit.Net` | .NET 8 |
+| Python | [pybit by Dexter Dickinson](https://github.com/bybit-exchange/pybit) | `pip install pybit` | Python 3.10 |
+| NodeJS | [bybit-api by Tiago Siebler](https://github.com/tiagosiebler/bybit-api) | `npm install --save bybit-api` | - |
 
 Interface used is `Bybit V5 API`. **Unified Trading account is REQUIRED!! Standard Accounts are not supported.**
 
@@ -50,12 +52,15 @@ Here is the list of articles you'll likely find useful if you're working on Trad
 | --- | --- |
 | Creating an API key | [How to Create Your API Key? @ Bybit Help Center](https://www.bybit.com/en/help-center/article/How-to-create-your-API-key) |
 | Introduction to API trading and documentation | [Introduction @ Bybit API Docs](https://bybit-exchange.github.io/docs/v5/intro) |
+| WebSocket Public & Private | [WebSocket Connect @ Bybit API Docs](https://bybit-exchange.github.io/docs/v5/ws/connect) |
+| WebSocket Trade | [Websocket Trade Guideline @ Bybit API Docs](https://bybit-exchange.github.io/docs/v5/websocket/trade/guideline) |
+| Introduction to DCA bots | [Introduction to DCA Trading on Bybit @ Bybit Help Center](https://www.bybit.com/en/help-center/article/Introduction-to-DCA-Bots) |
 | Introduction to Martingale bots | [Introduction to Futures Martingale Bot @ Bybit Help Center](https://www.bybit.com/en/help-center/article/Introduction-to-Futures-Martingale-Bot) |
 | Introduction to Grid bots | [Introduction to Futures Grid Bot on Bybit @ Bybit Help Center](https://www.bybit.com/en/help-center/article/Introduction-to-Futures-Grid-Bot-on-Bybit) |
 
 ## Professional work - [SELF-ADVERTISEMENT]
 
-Need a professional to build a trading bot for you? Wide portfolio of different trading bots and TradingView strategies implemented into C# and Python applications. Cheap hosting for your bots, backtesting of your strategies. Professional help with code/consulting. You can always find me here:
+Need professional help in building a trading bot that will last you until retirement? I have a wide portfolio of different trading bots and TradingView strategies implemented into C# and Python applications. I can provide you with a cheap hosting place for your bots, help backtest your strategies. You can always find me here:
 
 TG: @kolya5544
 
