@@ -119,7 +119,8 @@ namespace MartingaleBot
                     Console.WriteLine($"Opening a new position...");
 
                     // open the position at current price if there are none
-                    var orderQuantity = decimal.Round(initialOrderSize / currentPrice, idData.LotSizeFilter.QuantityStep.Scale, MidpointRounding.ToZero);
+                    var orderQuantity = initialOrderSize / currentPrice;
+                    orderQuantity -= orderQuantity % idData.LotSizeFilter.QuantityStep.Scale;
 
                     var openOrder = await restClient.V5Api.Trading.PlaceOrderAsync(
                         category: botCategory,
@@ -158,7 +159,7 @@ namespace MartingaleBot
             // calculate appropriate TP
             var avgPrice = posOfInt.AveragePrice.Value;
             var tp = avgPrice * (1 + (side == OrderSide.Buy ? +takeProfit : -takeProfit));
-            tp = decimal.Round(tp, idData.PriceFilter.TickSize.Scale, MidpointRounding.ToZero);
+            tp -= tp % idData.PriceFilter.TickSize.Scale;
 
             Console.WriteLine($"Attempt to update TP value of a position.");
 
@@ -208,8 +209,8 @@ namespace MartingaleBot
                         var newQuantity = previousQuantity * posMultiplier;
 
                         // process in accordance with Bybit requirements on quantity and price.
-                        newQuantity = decimal.Round(newQuantity, idData.LotSizeFilter.QuantityStep.Scale, MidpointRounding.ToZero);
-                        newPrice = decimal.Round(newPrice, idData.PriceFilter.TickSize.Scale, MidpointRounding.ToZero);
+                        newQuantity -= newQuantity % idData.LotSizeFilter.QuantityStep.Scale;
+                        newPrice -= newPrice % idData.PriceFilter.TickSize.Scale;
 
                         previousPrice = newPrice;
                         previousQuantity = newQuantity;

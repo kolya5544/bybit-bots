@@ -140,7 +140,8 @@ namespace GridBot
                     Console.WriteLine($"Found a total of {countGridLines} grid lines applicable. Opening a position of size {initialOrderSize} * {countGridLines} = {initialOrderSize * countGridLines}");
 
                     // open the position at current price if there are none
-                    var orderQuantity = decimal.Round(initialOrderSize * countGridLines, idData.LotSizeFilter.QuantityStep.Scale, MidpointRounding.ToZero);
+                    var orderQuantity = initialOrderSize * countGridLines;
+                    orderQuantity -= orderQuantity % idData.LotSizeFilter.QuantityStep.Scale;
 
                     var openOrder = await restClient.V5Api.Trading.PlaceOrderAsync(
                         category: Category.Linear,
@@ -235,7 +236,7 @@ namespace GridBot
                         var newGridIndex = correspondingGridIndex + (side == OrderSide.Buy ? 1 : -1);
                         var newGridPrice = gridLines[newGridIndex];
 
-                        var price = decimal.Round(newGridPrice, idData.PriceFilter.TickSize.Scale, MidpointRounding.ToZero);
+                        var price = newGridPrice - (newGridPrice % idData.PriceFilter.TickSize.Scale);
 
                         Console.WriteLine($"Limit open position order executed @ ${execPrice}. Attempting to create a close position order @ ${price}");
 
@@ -264,7 +265,7 @@ namespace GridBot
                         var newGridIndex = correspondingGridIndex + (side == OrderSide.Buy ? -1 : 1);
                         var newGridPrice = gridLines[newGridIndex];
 
-                        var price = decimal.Round(newGridPrice, idData.PriceFilter.TickSize.Scale, MidpointRounding.ToZero);
+                        var price = newGridPrice - (newGridPrice % idData.PriceFilter.TickSize.Scale);
 
                         Console.WriteLine($"Limit close position order executed @ ${execPrice}. Attempting to create a open position order @ ${price}");
 
@@ -299,7 +300,7 @@ namespace GridBot
                 var appropriateGridPosition = gridLines[currentGridLine + (i + 1) * (side == OrderSide.Buy ? 1 : -1)];
 
                 // convert to Bybit-applicable price
-                var price = decimal.Round(appropriateGridPosition, idData.PriceFilter.TickSize.Scale, MidpointRounding.ToZero);
+                var price = appropriateGridPosition - (appropriateGridPosition % idData.PriceFilter.TickSize.Scale);
                 Console.WriteLine($"Putting CLOSE order at ${price}");
 
                 // place the limit order
@@ -327,7 +328,7 @@ namespace GridBot
                 var newApprGridPos = gridLines[side == OrderSide.Buy ? i : (gridLines.Count - i - 1)];
 
                 // convert to Bybit-applicable price
-                var price = decimal.Round(newApprGridPos, idData.PriceFilter.TickSize.Scale, MidpointRounding.ToZero);
+                var price = newApprGridPos - (newApprGridPos % idData.PriceFilter.TickSize.Scale);
                 Console.WriteLine($"Putting OPEN order at ${price}");
 
                 // place the limit order
