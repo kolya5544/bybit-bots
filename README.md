@@ -25,7 +25,7 @@ There are different categories of bots presented in this repository.
 | [`indicator_examples`](https://github.com/kolya5544/bybit-bots/tree/master/indicator_examples) | Examples of bots that report information on different indicators, and trade accordingly | 🔥🔥🔥🔥 - Advanced |
 | [`liquidity_provider_examples`](https://github.com/kolya5544/bybit-bots/tree/master/liquidity_provider_examples) | [TODO] Simple High-Frequency Liquidity Provider bot for perpetual pairs. **You will likely need at least MM 1 level to turn this into a profitable strategy.** | 🔥🔥🔥🔥🔥 - Professional |
 | [`amm_examples`](https://github.com/kolya5544/bybit-bots/tree/master/amm_examples) | [TODO] Examples of Automated Market Maker bots, CFMMs/CPMMs | 🔥🔥🔥🔥🔥 - Professional |
-| [`price_arbitrage_examples`](https://github.com/kolya5544/bybit-bots/tree/master/price_arbitrage_examples) | [TODO] Examples of bots that arbitrage difference between spot and futures on a single exchange | 🔥🔥🔥🔥🔥 - Professional |
+| [`price_arbitrage_examples`](https://github.com/kolya5544/bybit-bots/tree/master/price_arbitrage_examples) | [TODO] Examples of bots that arbitrage the difference between spot and futures on a single exchange | 🔥🔥🔥🔥🔥 - Professional |
 | [`funding_arbitrage_examples`](https://github.com/kolya5544/bybit-bots/tree/master/funding_arbitrage_examples) | [TODO] Examples of bots that arbitrage funding rate by utilizing spot and futures | 🔥🔥🔥🔥🔥 - Professional |
 
 Each category will have examples in some of available languages. You can check out the libraries below.
@@ -40,7 +40,6 @@ I don't plan on including any raw REST API bots, so for every language there'll 
 | --- | --- | --- | --- |
 | C# | [Bybit.Net by JKorf](https://github.com/JKorf/Bybit.Net) | `dotnet add package Bybit.Net` | .NET 8 |
 | Python | [pybit by Dexter Dickinson](https://github.com/bybit-exchange/pybit) | `pip install pybit` | Python 3.10 |
-| NodeJS | [bybit-api by Tiago Siebler](https://github.com/tiagosiebler/bybit-api) | `npm install --save bybit-api` | - |
 
 Interface used is `Bybit V5 API`. **Unified Trading account is REQUIRED!! Standard Accounts are not supported.**
 
