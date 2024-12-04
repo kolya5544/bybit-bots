@@ -80,7 +80,7 @@ order = trade.place_order(
     orderType="Limit",
     qty="0.05",
     price=str(BtcPrice),
-    callback=None
+    callback=print
     )
 print(f"[MAIN] Created new order! Waiting indefinitely...");
 
