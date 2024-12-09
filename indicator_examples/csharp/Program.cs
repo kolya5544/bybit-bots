@@ -21,8 +21,8 @@ namespace IndicatorBot
         public static BybitRestClient restClient;
 
         // setup
-        public static string symbol = "SOLUSDT";
-        public static KlineInterval timeframe = KlineInterval.OneMinute;
+        public static string symbol = "MNTUSDT";
+        public static KlineInterval timeframe = KlineInterval.ThreeMinutes;
         public static int RsiInterval = 14; // 14 is the default in a lot of cases. For 14, the bot will be looking for RSI 14 SMA 14.
         public static int CCIInterval = 20; // 20 is the default in a lot of cases. For 20, the bot will be looking for CCI 20 SMA 20.
         public static decimal qty = 1m; // 1 SOL in this case

@@ -77,7 +77,8 @@ namespace GridBot
             // acquire instrument data on the instrument specified
             var id = await restClient.V5Api.ExchangeData.GetLinearInverseSymbolsAsync(
                 category: Category.Linear,
-                symbol: symbol
+                symbol: symbol,
+                limit: 1000
                 );
             idData = id.Data.List.First();
 
