@@ -9,8 +9,6 @@ Ethereum, MNT and other tokens - `kolya5544.eth` / 0x27c5De49e72257c426D92b22f83
 
 Bybit ID for direct transfers of any coin: `118027304`
 
-Bybit, please hire me 😥
-
 ## Breakdown
 
 There are different categories of bots presented in this repository.
