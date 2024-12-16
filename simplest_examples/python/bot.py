@@ -37,8 +37,7 @@ newOrder = client.place_order(
     symbol="TONUSDT",
     side="Buy",
     orderType="Market",
-    qty="100",
-    timeInForce="GTC"
+    qty="100"
 )
 print(f"Successful order creation! Order ID: {newOrder['result']['orderId']}")
 print()
